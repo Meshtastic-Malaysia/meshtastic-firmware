@@ -43,7 +43,7 @@ Allocator<meshtastic_MeshPacket> &packetPool = dynamicPool;
     (MAX_RX_TOPHONE + MAX_RX_FROMRADIO + 2 * MAX_TX_QUEUE +                                                                      \
      2) // max number of packets which can be in flight (either queued from reception or queued for sending)
 
-static MemoryPool<meshtastic_MeshPacket, MAX_PACKETS_STATIC> staticPool;
+static MemoryDynamic<meshtastic_MeshPacket> staticPool;
 Allocator<meshtastic_MeshPacket> &packetPool = staticPool;
 #endif
 
