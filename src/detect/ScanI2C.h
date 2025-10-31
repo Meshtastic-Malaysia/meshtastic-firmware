@@ -83,9 +83,7 @@ class ScanI2C
         BMM150,
         TSL2561,
         DRV2605,
-        BH1750,
-        DA217,
-        CHSC6X
+        BH1750
     } DeviceType;
 
     // typedef uint8_t DeviceAddress;
